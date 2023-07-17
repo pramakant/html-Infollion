@@ -118,294 +118,296 @@
   </svg>
 
 
-  <div class="wrapper container-fluid">
-    <div class="row">
-      <div class="sidebar col-md-3 col-lg-2 pt-3 pb-4 ps-2 pe-1 bg-white">
-        <div class="d-flex align-items-center">
-          <button class="nav-link ps-2 pe-3 pe-md-4 text-white" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <svg class="bi hamburger-icon">
-              <use xlink:href="#list"></use>
-            </svg>
-          </button>
-          <a href=" /" class="d-flex align-items-center link-body-emphasis text-decoration-none">
-            <span class="fs-5 fw-semibold"><img src="img/logo.png" height="39" alt="logo"></span>
-          </a>
-        </div>
-
-        <div class="offcanvas-lg offcanvas-end bg-white mt-md-5" tabindex="-1" id="sidebarMenu">
-
-          <div class="offcanvas-header">
-            <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="row h-100">
+        <div class="sidebar col-md-3 col-lg-2 pt-3 pb-4 ps-2 pe-1 bg-white">
+          <div class="d-flex align-items-center">
+            <button class="nav-link ps-2 pe-3 pe-md-4 text-white" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <svg class="bi hamburger-icon">
+                <use xlink:href="#list"></use>
+              </svg>
+            </button>
+            <a href=" /" class="d-flex align-items-center link-body-emphasis text-decoration-none">
               <span class="fs-5 fw-semibold"><img src="img/logo.png" height="39" alt="logo"></span>
             </a>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu"
-              aria-label="Close"></button>
           </div>
-          <div class="scrollarea scrollbar side-scrollbar">
-            <ul class="list-unstyled ps-0">
-              <li class="mb-1">
-                <button
-                  class="btn dropdown-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 justify-content-between small"
-                  data-bs-toggle="collapse" data-bs-target="#manage-collapse" aria-expanded="true">
-                  Manage
-                </button>
-                <div class="collapse show" id="manage-collapse">
-                  <ul class="btn-toggle-nav list-unstyled pb-1 small">
-                    <li><a href="#"
-                        class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Moderate</a>
-                    </li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Tag</a>
-                    </li>
-                    <li><a href="#"
-                        class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Compliance</a>
-                    </li>
-                    <li><a href="#"
-                        class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Payments</a>
-                    </li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Advance
-                        Settings</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-            <ul class="list-unstyled ps-0">
-              <li class="mb-1">
-                <button
-                  class="btn dropdown-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 justify-content-between small"
-                  data-bs-toggle="collapse" data-bs-target="#users-collapse" aria-expanded="true">
-                  Users
-                </button>
-                <div class="collapse show" id="users-collapse">
-                  <ul class="btn-toggle-nav list-unstyled pb-1 small">
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Admin</a>
-                    </li>
-                    <li><a href="#"
-                        class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill active">Customer</a>
-                    </li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-            <ul class="list-unstyled ps-0">
-              <li class="mb-1">
-                <button
-                  class="btn dropdown-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 justify-content-between small"
-                  data-bs-toggle="collapse" data-bs-target="#engagements-collapse" aria-expanded="true">
-                  Engagements
-                </button>
-                <div class="collapse show" id="engagements-collapse">
-                  <ul class="btn-toggle-nav list-unstyled pb-1 small">
-                    <li><a href="#"
-                        class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Projects</a>
-                    </li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Calls</a>
-                    </li>
-                    <li><a href="#"
-                        class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Calendar</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-            <ul class="list-unstyled ps-0">
-              <li class="mb-1">
-                <button
-                  class="btn dropdown-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 justify-content-between small"
-                  data-bs-toggle="collapse" data-bs-target="#experts-collapse" aria-expanded="true">
-                  Experts
-                </button>
-                <div class="collapse show" id="experts-collapse">
-                  <ul class="btn-toggle-nav list-unstyled pb-1 small">
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Expert
-                        Search</a>
-                    </li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Value
-                        Chain</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
+  
+          <div class="offcanvas-lg offcanvas-end bg-white mt-md-5" tabindex="-1" id="sidebarMenu">
+  
+            <div class="offcanvas-header">
+              <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+                <span class="fs-5 fw-semibold"><img src="img/logo.png" height="39" alt="logo"></span>
+              </a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu"
+                aria-label="Close"></button>
+            </div>
+            <div class="scrollarea scrollbar side-scrollbar">
+              <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                  <button
+                    class="btn dropdown-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 justify-content-between small"
+                    data-bs-toggle="collapse" data-bs-target="#manage-collapse" aria-expanded="true">
+                    Manage
+                  </button>
+                  <div class="collapse show" id="manage-collapse">
+                    <ul class="btn-toggle-nav list-unstyled pb-1 small">
+                      <li><a href="#"
+                          class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Moderate</a>
+                      </li>
+                      <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Tag</a>
+                      </li>
+                      <li><a href="#"
+                          class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Compliance</a>
+                      </li>
+                      <li><a href="#"
+                          class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Payments</a>
+                      </li>
+                      <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Advance
+                          Settings</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                  <button
+                    class="btn dropdown-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 justify-content-between small"
+                    data-bs-toggle="collapse" data-bs-target="#users-collapse" aria-expanded="true">
+                    Users
+                  </button>
+                  <div class="collapse show" id="users-collapse">
+                    <ul class="btn-toggle-nav list-unstyled pb-1 small">
+                      <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Admin</a>
+                      </li>
+                      <li><a href="#"
+                          class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill active">Customer</a>
+                      </li>
+                      <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                  <button
+                    class="btn dropdown-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 justify-content-between small"
+                    data-bs-toggle="collapse" data-bs-target="#engagements-collapse" aria-expanded="true">
+                    Engagements
+                  </button>
+                  <div class="collapse show" id="engagements-collapse">
+                    <ul class="btn-toggle-nav list-unstyled pb-1 small">
+                      <li><a href="#"
+                          class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Projects</a>
+                      </li>
+                      <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Calls</a>
+                      </li>
+                      <li><a href="#"
+                          class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Calendar</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                  <button
+                    class="btn dropdown-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 justify-content-between small"
+                    data-bs-toggle="collapse" data-bs-target="#experts-collapse" aria-expanded="true">
+                    Experts
+                  </button>
+                  <div class="collapse show" id="experts-collapse">
+                    <ul class="btn-toggle-nav list-unstyled pb-1 small">
+                      <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Expert
+                          Search</a>
+                      </li>
+                      <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Value
+                          Chain</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+          </div>
+          </div>
         </div>
-        </div>
+  
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <header class="py-3 mb-4">
+            <div class="d-grid gap-3 align-items-center header-title-search-user-section">
+              <h4 class="fs-4">Customer</h4>
+              <div class="d-flex align-items-center w-100">
+                <form class="w-100 me-md-3 search-field" role="search">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-search ms-3 position-absolute"></i>
+                    <input type="search" class="form-control px-5" placeholder="Search By Project Name, Clint Name"
+                      aria-label="Search">
+                  </div>
+                </form>
+              </div>
+              <div class="d-inline-flex justify-content-end user-name">
+                <div class="flex-shrink-0 dropdown bg-white rounded-pill">
+                  <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle pe-2"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/user_icon.png" alt="mdo" width="44" height="44" class="rounded-circle me-1 user-pic">
+                    <span class="u-name small me-3">Vijay Sharma</span>
+                  </a>
+                  <ul class="dropdown-menu text-small shadow bg-white">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </header>
+  
+          <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+          </div>
+          <div class="d-grid gap-4 align-items-center rounded-4 bg-white table table-bcg-overview">
+            <div class="table-responsive small">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center bg-white">
+                  <h6 class="table-title mb-0 me-4">BCG Overview</h6>
+  
+                </div>
+  
+              </div>
+              <table class="table table-sm table-customer">
+                <thead>
+                  <tr class="table-success">
+                    <th scope="col">Month</th>
+                    <th scope="col">Revenue $</th>
+                    <th scope="col">Call Count</th>
+                    <th scope="col">Projects</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>March</td>
+                    <td>6365</td>
+                    <td>97</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>March</td>
+                    <td>6365</td>
+                    <td>97</td>
+                    <td>23</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-responsive small">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-xxl-flex justify-content-between align-items-center bg-white">
+                  <h6 class="table-title mb-0">POC(contact)</h6>
+                  <span class="table-sub-title bg-white fw-normal p-0">From 1st March 2022 To 20th July 2022</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center action-icons p-0 gap-3">
+                  <span class="card-more-icons" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                      class="bi bi-calendar4-range"></i></span>
+                  <a href="#" class="card-more-link"><i class="bi bi-three-dots-vertical ml-auto"></i></a>
+                </div>
+              </div>
+              <table class="table table-sm table-customer">
+                <thead>
+                  <tr class="table-success">
+                    <th scope="col" style="width: 33%">Total</th>
+                    <th scope="col">Active</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>23</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>18</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+  
+          </div>
+  
+          <div class="section-oa pb-5">
+            <div class="d-flex justify-content-start mb-3">
+              <h4 class="title-oa ms-4 mb-3 mt-2">Office Addresses
+                <i class="bi bi-plus-circle-fill ms-5"></i>
+              </h4>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mb-3">
+              <div class="col mb-3">
+                <div class="card rounded-4 bg-white border-0 pb-5">
+                  <div class="card-body ps-4 pt-4 pm-4 pe-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h6 class="card-title mb-0">Delhi Office
+                      </h6>
+                      <a href="#" class="card-more-link"><i class="bi bi-three-dots-vertical ml-auto"></i></a>
+                    </div>
+                    <p class="card-text mb-3 small">Entity Name</p>
+                    <p class="card-text small">Noida 63 <br>Pincle Tower<br> Noida, Utter Pradesh 110062<br> India</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-3">
+                <div class="card rounded-4 bg-white border-0 pb-5">
+                  <div class="card-body ps-4 pt-4 pm-4 pe-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h6 class="card-title mb-0">Delhi Office
+                      </h6>
+                      <a href="#" class="card-more-link"><i class="bi bi-three-dots-vertical ml-auto"></i></a>
+                    </div>
+                    <p class="card-text mb-3 small">Entity Name</p>
+                    <p class="card-text small">Noida 63 <br>Pincle Tower<br> Noida, Utter Pradesh 110062<br> India</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-3">
+                <div class="card rounded-4 bg-white border-0 pb-5">
+                  <div class="card-body ps-4 pt-4 pm-4 pe-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h6 class="card-title mb-0">Delhi Office
+                      </h6>
+                      <a href="#" class="card-more-link"><i class="bi bi-three-dots-vertical ml-auto"></i></a>
+                    </div>
+                    <p class="card-text mb-3 small">Entity Name</p>
+                    <p class="card-text small">Noida 63 <br>Pincle Tower<br> Noida, Utter Pradesh 110062<br> India</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-3">
+                <div class="card rounded-4 bg-white border-0 pb-5">
+                  <div class="card-body ps-4 pt-4 pm-4 pe-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h6 class="card-title mb-0">Delhi Office
+                      </h6>
+                      <a href="#" class="card-more-link"><i class="bi bi-three-dots-vertical ml-auto"></i></a>
+                    </div>
+                    <p class="card-text mb-3 small">Entity Name</p>
+                    <p class="card-text small">Noida 63 <br>Pincle Tower<br> Noida, Utter Pradesh 110062<br> India</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+          
+        </main>
       </div>
-
-      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-        <header class="py-3 mb-4">
-          <div class="d-grid gap-3 align-items-center header-title-search-user-section">
-            <h4 class="fs-4">Customer</h4>
-            <div class="d-flex align-items-center w-100">
-              <form class="w-100 me-md-3 search-field" role="search">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-search ms-3 position-absolute"></i>
-                  <input type="search" class="form-control px-5" placeholder="Search By Project Name, Clint Name"
-                    aria-label="Search">
-                </div>
-              </form>
-            </div>
-            <div class="d-inline-flex justify-content-end user-name">
-              <div class="flex-shrink-0 dropdown bg-white rounded-pill">
-                <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle pe-2"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="img/user_icon.png" alt="mdo" width="44" height="44" class="rounded-circle me-1 user-pic">
-                  <span class="u-name small me-3">Vijay Sharma</span>
-                </a>
-                <ul class="dropdown-menu text-small shadow bg-white">
-                  <li><a class="dropdown-item" href="#">New project...</a></li>
-                  <li><a class="dropdown-item" href="#">Settings</a></li>
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Sign out</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </header>
-
-        <div class="row">
-          <div class="col"></div>
-          <div class="col"></div>
-        </div>
-        <div class="d-grid gap-4 align-items-center rounded-4 bg-white table table-bcg-overview">
-          <div class="table-responsive small">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="d-flex justify-content-between align-items-center bg-white">
-                <h6 class="table-title mb-0 me-4">BCG Overview</h6>
-
-              </div>
-
-            </div>
-            <table class="table table-sm table-customer">
-              <thead>
-                <tr class="table-success">
-                  <th scope="col">Month</th>
-                  <th scope="col">Revenue $</th>
-                  <th scope="col">Call Count</th>
-                  <th scope="col">Projects</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>March</td>
-                  <td>6365</td>
-                  <td>97</td>
-                  <td>23</td>
-                </tr>
-                <tr>
-                  <td>March</td>
-                  <td>6365</td>
-                  <td>97</td>
-                  <td>23</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="table-responsive small">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="d-xxl-flex justify-content-between align-items-center bg-white">
-                <h6 class="table-title mb-0">POC(contact)</h6>
-                <span class="table-sub-title bg-white fw-normal p-0">From 1st March 2022 To 20th July 2022</span>
-              </div>
-              <div class="d-flex justify-content-between align-items-center action-icons p-0 gap-3">
-                <span class="card-more-icons" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                    class="bi bi-calendar4-range"></i></span>
-                <a href="#" class="card-more-link"><i class="bi bi-three-dots-vertical ml-auto"></i></a>
-              </div>
-            </div>
-            <table class="table table-sm table-customer">
-              <thead>
-                <tr class="table-success">
-                  <th scope="col" style="width: 33%">Total</th>
-                  <th scope="col">Active</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>23</td>
-                  <td>23</td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>18</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-        </div>
-
-        <div class="section-oa pb-5">
-          <div class="d-flex justify-content-start mb-3">
-            <h4 class="title-oa ms-4 mb-3 mt-2">Office Addresses
-              <i class="bi bi-plus-circle-fill ms-5"></i>
-            </h4>
-          </div>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mb-3">
-            <div class="col mb-3">
-              <div class="card rounded-4 bg-white border-0 pb-5">
-                <div class="card-body ps-4 pt-4 pm-4 pe-2">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h6 class="card-title mb-0">Delhi Office
-                    </h6>
-                    <a href="#" class="card-more-link"><i class="bi bi-three-dots-vertical ml-auto"></i></a>
-                  </div>
-                  <p class="card-text mb-3 small">Entity Name</p>
-                  <p class="card-text small">Noida 63 <br>Pincle Tower<br> Noida, Utter Pradesh 110062<br> India</p>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-3">
-              <div class="card rounded-4 bg-white border-0 pb-5">
-                <div class="card-body ps-4 pt-4 pm-4 pe-2">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h6 class="card-title mb-0">Delhi Office
-                    </h6>
-                    <a href="#" class="card-more-link"><i class="bi bi-three-dots-vertical ml-auto"></i></a>
-                  </div>
-                  <p class="card-text mb-3 small">Entity Name</p>
-                  <p class="card-text small">Noida 63 <br>Pincle Tower<br> Noida, Utter Pradesh 110062<br> India</p>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-3">
-              <div class="card rounded-4 bg-white border-0 pb-5">
-                <div class="card-body ps-4 pt-4 pm-4 pe-2">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h6 class="card-title mb-0">Delhi Office
-                    </h6>
-                    <a href="#" class="card-more-link"><i class="bi bi-three-dots-vertical ml-auto"></i></a>
-                  </div>
-                  <p class="card-text mb-3 small">Entity Name</p>
-                  <p class="card-text small">Noida 63 <br>Pincle Tower<br> Noida, Utter Pradesh 110062<br> India</p>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-3">
-              <div class="card rounded-4 bg-white border-0 pb-5">
-                <div class="card-body ps-4 pt-4 pm-4 pe-2">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h6 class="card-title mb-0">Delhi Office
-                    </h6>
-                    <a href="#" class="card-more-link"><i class="bi bi-three-dots-vertical ml-auto"></i></a>
-                  </div>
-                  <p class="card-text mb-3 small">Entity Name</p>
-                  <p class="card-text small">Noida 63 <br>Pincle Tower<br> Noida, Utter Pradesh 110062<br> India</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        
-      </main>
     </div>
   </div>
 
