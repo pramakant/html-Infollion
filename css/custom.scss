@@ -44,6 +44,9 @@ h6 {
   color: #252b3b;
   line-height: 2.0625rem;
 }
+.form-control-sm {
+  --bs-border-radius-sm: var(--bs-border-radius-pill);
+}
 .btn {
   --bs-border-radius: var(--bs-border-radius-pill);
   font-size: var(--fs-14);
@@ -321,6 +324,9 @@ h4 .bi.bi-plus-circle-fill {
     --bs-border-color: rgba(0, 0, 0, 0.29);
     border-color: var(--bs-border-color) !important;
   }
+}
+.modal {
+  --bs-body-bg: #fff;
 }
 
 // make sidbar visible till bottom

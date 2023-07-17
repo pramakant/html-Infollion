@@ -20,6 +20,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,500&display=swap"
     rel="stylesheet">
 
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="calendar-03/css/style.css">
 
   <!-- Custom styles for this template -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -145,10 +148,10 @@
               <li class="mb-1">
                 <button
                   class="btn dropdown-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 justify-content-between small"
-                  data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                  data-bs-toggle="collapse" data-bs-target="#manage-collapse" aria-expanded="true">
                   Manage
                 </button>
-                <div class="collapse show" id="home-collapse">
+                <div class="collapse show" id="manage-collapse">
                   <ul class="btn-toggle-nav list-unstyled pb-1 small">
                     <li><a href="#"
                         class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Moderate</a>
@@ -172,10 +175,10 @@
               <li class="mb-1">
                 <button
                   class="btn dropdown-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 justify-content-between small"
-                  data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                  data-bs-toggle="collapse" data-bs-target="#users-collapse" aria-expanded="true">
                   Users
                 </button>
-                <div class="collapse show" id="home-collapse">
+                <div class="collapse show" id="users-collapse">
                   <ul class="btn-toggle-nav list-unstyled pb-1 small">
                     <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Admin</a>
                     </li>
@@ -192,14 +195,11 @@
               <li class="mb-1">
                 <button
                   class="btn dropdown-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 justify-content-between small"
-                  data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-                  Manage
+                  data-bs-toggle="collapse" data-bs-target="#engagements-collapse" aria-expanded="true">
+                  Engagements
                 </button>
-                <div class="collapse show" id="home-collapse">
+                <div class="collapse show" id="engagements-collapse">
                   <ul class="btn-toggle-nav list-unstyled pb-1 small">
-                    <li><a href="#"
-                        class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Engagements</a>
-                    </li>
                     <li><a href="#"
                         class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Projects</a>
                     </li>
@@ -216,10 +216,10 @@
               <li class="mb-1">
                 <button
                   class="btn dropdown-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 justify-content-between small"
-                  data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                  data-bs-toggle="collapse" data-bs-target="#experts-collapse" aria-expanded="true">
                   Experts
                 </button>
-                <div class="collapse show" id="home-collapse">
+                <div class="collapse show" id="experts-collapse">
                   <ul class="btn-toggle-nav list-unstyled pb-1 small">
                     <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded-pill">Expert
                         Search</a>
@@ -402,9 +402,15 @@
             </div>
           </div>
         </div>
+
+
+        
       </main>
     </div>
   </div>
+
+	
+
 
   <!-- Modal-Calander -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -415,15 +421,79 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          calendar...
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label class="col-form-label">Time</label>
+            </div>
+            <div class="col-auto">
+              <input class="form-control form-control-sm" type="time" step="2" aria-label="" style="min-width: 213px;">
+            </div>
+          </div>
+         
+
+          <section class="ftco-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="calendar-section">
+                    <div class="row no-gutters">
+                      <div class="col-md-6">
+        
+                        <div class="calendar calendar-first" id="calendar_first">
+                          <div class="calendar_header">
+                            <button class="switch-month switch-left">
+                              <i class="fa fa-chevron-left"></i>
+                            </button>
+                            <h2>Month Year Start</h2>
+                            <button class="switch-month switch-right">
+                              <i class="fa fa-chevron-right"></i>
+                            </button>
+                          </div>
+                          <div class="calendar_weekdays"></div>
+                          <div class="calendar_content"></div>
+                        </div>
+        
+                      </div>
+                      <div class="col-md-6">
+        
+                        <div class="calendar calendar-second" id="calendar_second">
+                          <div class="calendar_header">
+                            <button class="switch-month switch-left">
+                              <i class="fa fa-chevron-left"></i>
+                            </button>
+                            <h2>Month Year Start</h2>
+                            <button class="switch-month switch-right">
+                              <i class="fa fa-chevron-right"></i>
+                            </button>
+                          </div>
+                          <div class="calendar_weekdays"></div>
+                          <div class="calendar_content"></div>
+                        </div>            
+        
+                      </div>
+        
+                    </div> <!-- End Row -->
+                        
+                  </div> <!-- End Calendar -->
+                </div>
+              </div>
+            </div>
+          </section>
+
         </div>
-        <div class="modal-footer border-top-0 gap-2">
+        <div class="modal-footer border-top-0 gap-2 pb-3">
           <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
           <button type="button" class="btn btn-primary">OK</button>
         </div>
       </div>
     </div>
   </div>
+
+
+
+  <script src="calendar-03/js/jquery.min.js"></script>
+  <script src="calendar-03/js/popper.js"></script>
+    <script src="calendar-03/js/main.js"></script>
 
 
   <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity=""
